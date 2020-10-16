@@ -1,0 +1,82 @@
+.slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-inner.carousel-item {
+    height: 100vh;
+}
+
+.btn-primary {
+    background-color: black !important;
+}
+
+
+/*Nuevo que puse*/
+
+.card img {
+    max-width: 300px;
+}
+
+.card {
+    border: none !important;
+}
+
+@media (max-width:768px) {
+    .card img {
+        max-width: 230px;
+    }
+}
+
+@media (max-width:768px) {
+    #ordenar2 {
+        order: 1;
+    }
+    #ordernar1 {
+        order: 2;
+    }
+}
+
+.titulos h1 {
+    font-size: 3.5rem;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3rem;
+}
+
+
+/*Aqui hize lo nuevo*/
+
+.team {
+    background: #10101C;
+}
+
+main h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3rem;
+}
+
+.team-seccion {
+    background: #2E2E4A;
+}
+
+.bg-primary {
+    background: #23232D !important;
+}
+
+.card-body h5 {
+    font-size: 15px;
+}
+
+@media (min-width:768px) {
+    .card-body h5 {
+        font-size: 2rem;
+    }
+}
+
+.card-body p {
+    font-size: 20px;
+}

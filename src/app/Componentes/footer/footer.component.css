@@ -1,0 +1,119 @@
+/*Footer*/
+
+.site-footer {
+    background-color: #170b2a;
+    /*define el color de fondo*/
+    padding: 45px 0 20px;
+    /*da espacios de derecha y izquiera y arriba hacia abajo*/
+    font-size: 15px;
+    /*tamaño de letra*/
+    line-height: 24px;
+    /* la altumta de una linea*/
+    color: #737373;
+    /*color de texto*/
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    /*color del contorno */
+    opacity: 0.5;
+    /*le baja la intendidad de color*/
+}
+
+.site-footer hr.small {
+    margin: 20px 0;
+    /*tiene un espacio asi adentro de 20 t*/
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    /*transforma las letras a minusculas*/
+    margin-top: 5px;
+    /*de da un espacio asi ariba*/
+    letter-spacing: 2px;
+    /*espacio de caracteres*/
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    /*hover es al momento de darle clic a algo se activara*/
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    /*espacio a la izquierda*/
+    list-style: none;
+    /*con este le quitamos las lineas de los hipertextos*/
+}
+
+.footer-links li {
+    display: block;
+    /*aqui toma todo el espacio en vertical*/
+}
+
+.footer-links a {
+    color: #737373;
+}
+
+.footer-links a:active,
+
+/*cuadno presionas en un etiqeuta ocurre una accion*/
+
+.footer-links a:focus,
+
+/*cuando pasas el puntero en la etiqueta*/
+
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block;
+    /*ponermos en forma vertical las listas*/
+}
+
+.site-footer .social-icons {
+    text-align: right;
+    /*texto se ira a la derecha*/
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    /*define un dobles en unas de las esquinas*/
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0;
+    /*Elemina los espacios sobrantes*/
+}
+
+@media (max-width:768px) {
+    /*aqui activa el responsive y dice que se activara cuando sea mayor de 991*/
+    .site-footer [class^=col-] {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .site-footer {
+        padding-bottom: 0;
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center;
+    }
+}

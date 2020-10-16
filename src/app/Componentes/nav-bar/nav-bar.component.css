@@ -1,0 +1,40 @@
+#navbarNav a {
+    /*Aqui obtenemos el id de la etiqeuta y le ponemos de color negro las letras*/
+    color: black;
+}
+
+.navbar {
+    /*Aqui obteneros una clase, las clases son con .  y los id son # , aqui ponemos el ancho de 100 para que tome toda la pantalla*/
+    width: 100%;
+}
+
+.col-md-6 {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item a {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.2rem;
+}
+
+
+/*LO NUEVO DE CSS*/
+
+.navbar-dark.bg-dark {
+    background-color: #180729 !important;
+}
+
+.logo a {
+    color: white;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+@media (min-width: 768px) {
+    .logo a {
+        font-size: 2rem;
+    }
+}

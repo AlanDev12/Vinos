@@ -1,0 +1,71 @@
+<!--Lo que ven aqui son etiquetas de bootstrap 
+
+    Navbars requieren un envoltorio .navbarcon .navbar-expand{-sm|-md|-lg|-xl}para plegar y sensibles esquema de color clases.
+    {-sm|-md|-lg|-xl} esto son tipos de tamaños de pantalla sm es para un dispositvo pequeño y xl es para un dispositivo muy grande
+    por lo regular usamos el md que abarcar 768 px para abajo
+
+    .navbar-nav para una navegación ligera y de altura completa (incluida la compatibilidad con menús desplegables).
+
+    .navbar-togglerpara usar con nuestro complemento de colapso y otros comportamientos de alternancia de navegación 
+
+    Los estados activos (con) .activepara indicar que la página actual se pueden aplicar directamente a .nav-linksus padres inmediatos .nav-item.
+    
+    .collapse.navbar-collapse para agrupar y ocultar el contenido de la barra de navegación por un punto de interrupción principal.
+
+    container es el contenedor y va barcar todo el alineado, tanto centrado como el ancho de la pagian
+
+    col-md-6 bootstrap se devide por columnas y filas hay una regla que dice que toda columna debe de tener forzosamente una container,
+    el -6 dice que tomara de las 12 espacion de columnas que abarca solo tomara 6}
+
+    div divide una etiqueta
+
+    a es un hipertexto
+    li es una etiqueta de lista
+
+    ul son sus items de la lista
+
+    span es para resaltar un contenido
+
+-->
+<!--Barra Vieja-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navbar-collapse">
+    <div class="col-md-6 logo">
+        <a class="navbar-brand" href="#">TupadrinoVino</a>
+    </div>
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/logo6.png" width="50" height="50" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-light " [routerLink]="['home']">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" [routerLink]="['shop']">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light">Carrito</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" [routerLink]="['contacto']">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" [routerLink]="['login']">Iniciar Sesion</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Los RouterLink son rutas a que me refiero que funcionan igual que href pero este evita que la pagina recargue y se 
+vea mucho mas rapida 
+
+aqui en angular se devide por componentes, cada componente es una vista y cada vista esta dividad por distintas secciones
+
+<router-outlet></router-outlet> este va a hacer que cada que presionemos una etiqueta a va direcionar a la ruta especificada
+como home o contactos que tiene la opcion de routerLink
+-->
+
+<router-outlet></router-outlet>

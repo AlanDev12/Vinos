@@ -1,0 +1,46 @@
+/*Aqui lo nuevo*/
+
+.texto-Pagina {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.texto-Pagina h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .texto-Pagina h3 {
+        font-size: 2rem;
+    }
+}
+
+
+/*Barra*/
+
+@media (min-width:768px) {
+    .barra input {
+        width: 700px;
+    }
+}
+
+.navbar-dark.bg-dark {
+    background-color: #2E2E4A !important;
+    height: 5rem;
+}
+
+.btn-outline-primary {
+    background-color: white !important;
+    color: black;
+}
+
+.compra {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.compra input {
+    width: 80px;
+    height: auto;
+}
