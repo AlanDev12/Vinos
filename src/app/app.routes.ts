@@ -5,6 +5,7 @@ import { ShopComponent } from './Componentes/shop/shop.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { RegistroComponent } from './Componentes/registro/registro.component';
 import { AdminComponent } from './Componentes/admin/admin.component';
+import { AuthGuard } from './guars/auth.guard';
 
 const APP_ROUTES: Routes = [
     {path: 'home', component: HomeComponent }, 
@@ -12,7 +13,7 @@ const APP_ROUTES: Routes = [
     {path: 'shop', component: ShopComponent},
     {path: 'login', component: LoginComponent},
     {path: 'registro', component: RegistroComponent},
-    {path: 'admin', component: AdminComponent},
+    {path: 'admin', component: AdminComponent, canActivate: [AuthGuard]},
     { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 export const APP_ROUTING =RouterModule.forRoot(APP_ROUTES);

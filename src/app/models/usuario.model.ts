@@ -1,7 +1,6 @@
 export class UsuarioModel{
-    id: string;
+    id?: string;
     name: string;
     correo: string;
     password: string;
-
 }

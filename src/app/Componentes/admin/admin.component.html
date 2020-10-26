@@ -1,2 +1,131 @@
-<p>Bienvenido Administrador Prro</p>
-<button class="btn btn-primary">Cerrar sesion</button>
+<body class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card-container">
+                <div class="header">
+                    <a href="#">
+                        <img src="assets/img/Admin/user.jpg" alt="">
+                    </a>
+                </div>
+                <div class="descripcion">
+                    <p>Usuarios</p>
+                    <p>{{cUser}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-container">
+                <div class="header ">
+                    <a href="#">
+                        <img src="assets/img/Admin/carrito.png" alt="">
+                    </a>
+                </div>
+                <div class="descripcion">
+                    <p>Productos</p>
+                    <p>{{cProductos}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-container">
+                <div class="header">
+                    <a href="#">
+                        <img src="assets/img/Admin/pesos.png" alt="">
+                    </a>
+                </div>
+                <div class="descripcion">
+                    <p>Ventas</p>
+                    <p>{{cVentas}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="mt-5">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Usuarios</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="accordion mt-3" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Nuevo Producto
+              </button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form class="validate.form" #f="ngForm" (ngSubmit)="Guardar_Producto(f)">
+                        <div class="form-row mt-4">
+                            <div class="col-md-3 mb-3">
+                                <label for="validationDefault01">Marca</label>
+                                <input type="text" class="form-control" id="marcaVino" placeholder="Marca del Producto" name="Marca" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault02">Tipo</label>
+                                <select class="custom-select" id="txtBebida" required name="producto">
+                                    <option selected disabled>Seleciona...</option>
+                                    <option value="Whisky">Whisky</option>
+                                    <option value="Vodka">Vodka</option>
+                                    <option value="Tequila">Tequila</option>
+                                    <option value="Ron">Ron</option>
+                                    <option value="Cerveza">Cerveza</option>
+                                    <option>Vino</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault01">Numero de Serie</label>
+                                <input type="text" class="form-control" id="Numserie" placeholder="Marca del Producto" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault03">Url Imagen</label>
+                                <input type="text" class="form-control" id="Imagen" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationDefault04">Precio</label>
+                                <input type="number" class="form-control" id="txtPrecio" required minlength="1">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationDefault05">Cantidad</label>
+                                <input type="number" class="form-control" id="txtCantidad" required minlength="1">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Eleminar Producto
+              </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>

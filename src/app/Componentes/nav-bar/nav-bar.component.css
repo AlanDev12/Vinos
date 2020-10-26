@@ -38,3 +38,7 @@
         font-size: 2rem;
     }
 }
+
+.nav-item a:hover {
+    cursor: pointer !important;
+}
